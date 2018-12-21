@@ -26,8 +26,12 @@ public class JmockitPrivateStaticfinalVariableTest {
         }
         @Test
         public void testPrintHelloConstans() {
+
             Deencapsulation.setField(JmockitPrivateStaticfinalVariable.class, "HELLO_CONSTANTS_PRIMITIVE_TYPE", 1000);
             Deencapsulation.setField(JmockitPrivateStaticfinalVariable.class, "HELLO_CONSTANTS_REFERENCE_TYPE", 1000);
+            Deencapsulation.setField(JmockitPrivateStaticfinalVariable.class, "currentday","20170101");
+//            new Expectations() {{ DateUtil.dateToString(new Date(), "yyyyMMdd"); result = "20170102"; }};
+//            Deencapsulation.invoke(DateUtil.class, "dateToString", "20170102");
             jp = new JmockitPrivateStaticfinalVariable();
             jp.printHelloConstants();
         }
