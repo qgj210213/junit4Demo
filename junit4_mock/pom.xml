@@ -3,12 +3,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>junit4Demo</groupId>
-	<artifactId>junit</artifactId>
+	<groupId>junit4_mock</groupId>
+	<artifactId>junit4_mock</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>junit4Demo</name>
+	<name>junit4_mock</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -33,11 +33,12 @@
 
 		<!-- https://mvnrepository.com/artifact/dbunit/dbunit -->
 		<dependency>
-			<groupId>dbunit</groupId>
-			<artifactId>dbunit</artifactId>
-			<version>2.2</version>
-			<scope>test</scope>
+		    <groupId>dbunit</groupId>
+		    <artifactId>dbunit</artifactId>
+		    <version>2.2</version>
+		    <scope>test</scope>
 		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest-core -->
 		<dependency>
 			<groupId>org.hamcrest</groupId>
